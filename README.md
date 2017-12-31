@@ -53,7 +53,7 @@ const dwitter = new Dwitter(playground, {
 ```
 
 ## Setting a limit
-Dwitter calls the function `u` 60 times per second in an infinite loop. When you want want to set a limit for the number of times the funtion should be called, you can set the `limit` property:
+Dwitter calls the function `u` 60 times per second in an infinite loop. When you want to set a limit for the number of times the funtion should be called, you can set the `limit` property:
 
 ```js
 const dwitter = new Dwitter(playground, {
@@ -70,7 +70,7 @@ const dwitter = new Dwitter(playground, {
 });
 ```
 ## Stopping and starting the animation
-You can use the methods `startAnimation` and `stopAnimation` to customize your interaction with the animation. For example you could put a button under the canvas element and toggle the animation.
+You can use the methods `startAnimation` and `stopAnimation` to customize your interaction with the animation. For example you could put a button under the canvas element and toggle the animation when the button is clicked.
 
 HTML:
 ```html
