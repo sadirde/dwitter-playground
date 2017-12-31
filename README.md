@@ -32,7 +32,7 @@ const dwitter = new Dwitter(playground, {
 ```
 
 ## Example
-With the example code from Dwitter when you click "New dweet":
+With the example code from Dwitter when you click the "New dweet" button:
 
 
 ```js
