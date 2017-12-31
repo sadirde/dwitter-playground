@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Canvas Playground</title>
+    <style>
+        #playground {
+            outline: 1px dashed #ccc;
+            width: 960px;
+            height: 540px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="playground"></canvas>
+
+    <script src="js/dwitter.js"></script>
+
+    <script>
+        const playground = document.querySelector("#playground");
+        const dwitter = new Dwitter(playground, {
+            width: 1920,
+            height: 1080,
+            playing: true,
+
+            u: (c, x, t, S, C, T, R) => {
+
+                /* Your code for the animation*/
+
+            }
+        });
+    </script>
+</body>
+</html>
