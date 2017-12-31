@@ -77,8 +77,8 @@ HTML:
 <canvas id="playground"></canvas>
 <button id="control">Start animation</button>
 ```
-```js
 JavaScript:
+```js
 const playground = document.querySelector("#playground");
 const control = document.querySelector("#control");
 const dwitter = new Dwitter(playground, {
