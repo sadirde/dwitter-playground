@@ -43,9 +43,9 @@ const dwitter = new Dwitter(playground, {
 
     u: (c, x, t, S, C, T, R) => {
 
-		/* Copypasted from Dwitter */
+        /* Copypasted from Dwitter */
         c.width=1920; /* clear the canvas */
-	    for(i=0;i<9;i++)
+	for(i=0;i<9;i++)
         x.fillRect(400+i*100+S(t)*300, 400, 50, 200) /* draw 50x200 rects */
 
     }
