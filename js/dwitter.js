@@ -26,7 +26,7 @@ class Dwitter {
         this.S = Math.sin;
         this.C = Math.cos;
         this.T = Math.tan;
-        this.R = (r, g, b, a = 1) => `rgba(${r}, ${g}, ${b}, ${a})`;
+        this.R = (r = 0, g = 0, b = 0, a = 1) => `rgba(${r}, ${g}, ${b}, ${a})`;
     }
 
     startAnimation() {
