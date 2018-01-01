@@ -5,8 +5,8 @@ class Dwitter {
         this.limit = options.limit;
         this.playing = !!options.playing;
         this.u = options.u;
-        this.time = 0;
-        this.frame = 0;
+        this._time = 0;
+        this._frame = 0;
         
         this._setDimensions(options.width, options.height);
         this._setShortFunctions();
@@ -41,16 +41,16 @@ class Dwitter {
     }
 
     _loop() {
-        if (this.playing && (this.limit === undefined || this.limit > this.frame)) {
-            this.time = this.frame / 60;
+        if (this.playing && (this.limit === undefined || this.limit > this._frame)) {
+            this._time = this._frame / 60;
             
-            if (this.time * 60 | 0 == this.frame - 1) {
-                this.time += 0.000001;
+            if (this._time * 60 | 0 == this._frame - 1) {
+                this._time += 0.000001;
             }
 
-            this.frame++;
+            this._frame++;
 
-            this.u(this.canvas, this.context, this.time, this.S, this.C, this.T, this.R);
+            this.u(this.canvas, this.context, this._time, this.S, this.C, this.T, this.R);
             window.requestAnimationFrame(this._loop.bind(this, this.u));
         }
     }
