@@ -51,7 +51,7 @@ class Dwitter {
             this._frame++;
 
             this.u(this.canvas, this.context, this._time, this.S, this.C, this.T, this.R);
-            window.requestAnimationFrame(this._loop.bind(this, this.u));
+            window.requestAnimationFrame(this._loop.bind(this));
         }
     }
 }
