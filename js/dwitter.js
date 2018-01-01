@@ -12,6 +12,7 @@ class Dwitter {
         this._setShortFunctions();
 
         if (this.playing) {
+            this.playing = false;
             this.startAnimation();
         }
     }
@@ -29,8 +30,10 @@ class Dwitter {
     }
 
     startAnimation() {
-        this.playing = true;
-        this._loop();
+        if (!this.playing) {
+            this.playing = true;
+            this._loop();
+        }
     }
 
     stopAnimation() {
